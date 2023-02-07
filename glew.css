@@ -1,1 +1,239 @@
-body{margin:0;padding:0}#splash{background-color:#fff;height:100%;position:absolute;width:100%;z-index:999;top:0;left:0}#splashContent{margin:auto;top:10%;width:50%;text-align:middle;text-align:center;position:relative}#name{padding:6px;margin-top:20px;display:none}#startButton{background-color:#ff0;border:1px solid;width:150px;margin:auto;margin-top:15px;font-size:25px;padding:10px;transition:.2s linear;display:none}#startButton:hover{background-color:orange}#gameMode .gameMode.selected{background-color:#7FEC7F;border:2px #7FEC7F solid}#gameMode .gameMode{margin:2px;padding:5px;background-color:#ddd;border:2px #ddd solid}#gameMode .gameMode:hover{border:2px #7FEC7F solid;color:green}#timer{display:none;clear:both;margin-top:15px;text-align:center;background-color:#A7E44C;font-weight:700}#game{top:0;left:0;bottom:0;right:0;position:relative;margin:auto;width:300px;height:100%;padding:5px}#score{clear:both;margin-bottom:15px;text-align:center;background-color:#bcf;font-weight:700}#score span:hover{text-decoration:underline}#score span{color:#fff;background-color:#8a2be2;border-radius:7px;padding:5px;text-decoration:none}#flash{height:95px;width:100px;display:block;float:left;margin-bottom:40px;font-size:130px;line-height:normal}.option{color:#00f;width:135px;margin:0 10px 10px 5px;text-align:center;background-color:#eee;transition:.1s linear;padding:4px;font-size:18px}.option:hover{background-color:#ccc;color:#000}.clickable{cursor:pointer}#options{float:left}#next{margin:auto;height:50%;position:absolute;right:0;top:0;bottom:0;font-size:50px}#next:hover{color:#00f}#next:before{content:"\279C"}#help{margin-top:15px;clear:left}.underline{text-decoration:underline}#testResults.failed{background-color:pink}#testResults{background-color:#9acd32;text-align:center}#scoreList{display:none}#topper{background-color:#ff0}@media screen and (max-width:900px){#score{margin-bottom:0}#flash{width:250px;float:none;text-align:center;margin-bottom:65px}#game{position:relative;top:20px;bottom:auto}#splashContent{top:5%}#next:before{content:">>";color:#00f}#gameMode .gameMode{display:block;margin:10px}#startButton{width:165px}#options{clear:both}.option{color:#00f;width:200px;height:40px;margin:0 10px 25px;text-align:center;background-color:#eee;cursor:pointer;vertical-align:middle;font-size:30px}#help{font-size:20px}}
+body {
+    margin: 0;
+    padding: 0
+}
+
+#splash {
+    background-color: #fff;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    z-index: 999;
+    top: 0;
+    left: 0
+}
+
+#splashContent {
+    margin: auto;
+    top: 10%;
+    width: 50%;
+    text-align: middle;
+    text-align: center;
+    position: relative
+}
+
+#name {
+    padding: 6px;
+    margin-top: 20px;
+    display: none
+}
+
+#startButton {
+    background-color: #ff0;
+    border: 1px solid;
+    width: 150px;
+    margin: auto;
+    margin-top: 15px;
+    font-size: 25px;
+    padding: 10px;
+    transition: .2s linear;
+    display: none
+}
+
+#startButton:hover {
+    background-color: orange
+}
+
+#gameMode .gameMode.selected {
+    background-color: #7FEC7F;
+    border: 2px #7FEC7F solid
+}
+
+#gameMode .gameMode {
+    margin: 2px;
+    padding: 5px;
+    background-color: #ddd;
+    border: 2px #ddd solid
+}
+
+#gameMode .gameMode:hover {
+    border: 2px #7FEC7F solid;
+    color: green
+}
+
+#timer {
+    display: none;
+    clear: both;
+    margin-top: 15px;
+    height: 35px;
+    text-align: center;
+    background-color: #A7E44C;
+    font-weight: 700
+}
+
+#game {
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: relative;
+    margin: auto;
+    width: 300px;
+    height: 100%;
+    padding: 5px
+}
+
+#score {
+    clear: both;
+    margin-bottom: 15px;
+    text-align: center;
+    background-color: #bcf;
+    font-weight: 700
+}
+
+#score span:hover {
+    text-decoration: underline
+}
+
+#score span {
+    color: #fff;
+    background-color: #8a2be2;
+    border-radius: 7px;
+    padding: 5px;
+    text-decoration: none
+}
+
+#flash {
+    height: 95px;
+    width: 100px;
+    display: block;
+    float: left;
+    margin-bottom: 40px;
+    font-size: 130px;
+    line-height: normal
+}
+
+.option {
+    color: #00f;
+    width: 135px;
+    margin: 0 10px 10px 5px;
+    text-align: center;
+    background-color: #eee;
+    transition: .1s linear;
+    padding: 4px;
+    font-size: 18px
+}
+
+.option:hover {
+    background-color: #ccc;
+    color: #000
+}
+
+.clickable {
+    cursor: pointer
+}
+
+#options {
+    float: left
+}
+
+#next {
+    margin: auto;
+    height: 50%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    font-size: 50px
+}
+
+#next:hover {
+    color: #00f
+}
+
+#next:before {
+    content: "\279C"
+}
+
+#help {
+    margin-top: 15px;
+    clear: left
+}
+
+.underline {
+    text-decoration: underline
+}
+
+#testResults.failed {
+    background-color: pink
+}
+
+#testResults {
+    background-color: #9acd32;
+    text-align: center
+}
+
+#scoreList {
+    display: none
+}
+
+#topper {
+    background-color: #ff0
+}
+
+@media screen and (max-width:900px) {
+    #score {
+        margin-bottom: 0
+    }
+
+    #flash {
+        width: 250px;
+        float: none;
+        text-align: center;
+        margin-bottom: 65px
+    }
+
+    #game {
+        position: relative;
+        top: 20px;
+        bottom: auto
+    }
+
+    #splashContent {
+        top: 5%
+    }
+
+    #next:before {
+        content: ">>";
+        color: #00f
+    }
+
+    #gameMode .gameMode {
+        display: block;
+        margin: 10px
+    }
+
+    #startButton {
+        width: 165px
+    }
+
+    #options {
+        clear: both
+    }
+
+    .option {
+        color: #00f;
+        width: 200px;
+        height: 40px;
+        margin: 0 10px 25px;
+        text-align: center;
+        background-color: #eee;
+        cursor: pointer;
+        vertical-align: middle;
+        font-size: 30px
+    }
+
+    #help {
+        font-size: 20px
+    }
+}
