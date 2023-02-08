@@ -1,4 +1,4 @@
-{
+var alphabets={
     1: { name: "OORHAA", gurmukhi: "ੳ", words: [
             "owl",
             "wool",
